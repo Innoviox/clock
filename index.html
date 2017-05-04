@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript" src="lib/jquery.js"></script>
+        <script type="text/javascript" src="lib/tether.js"></script>
+        <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="lib/voca.js"></script>
+        <script src="http://cdn.date-fns.org/v1.0.0/date_fns.min.js"></script>
+        <link href="lib/bootstrap.min.css" rel="stylesheet">
+        <link href="lib/animate.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+		<!--<canvas id="hours" class="clock"></canvas>
+		<canvas id="minutes" class="clock"></canvas>
+        <canvas id="seconds" class="clock"></canvas>-->
+		<canvas id="canvas" class="clock" height=500px width=500px></canvas>
+
+        <script type="text/javascript" src="src/clock.js"></script>
+        <script type="text/javascript">
+			/*var seconds, minutes, hours;
+			
+            drawCanvas("canvas", function() {
+                seconds = new Date().getSeconds();
+                if (seconds == 0)
+                    return 60;
+                return seconds;
+            }, 60, 1000, 150, 150, 50, 25);
+			
+			drawCanvas("canvas", function() {
+                minutes = new Date().getMinutes();
+                return minutes;
+            }, 60, 1000, 150, 150, 100, 50, fill=false);
+			
+			drawCanvas("canvas", function() {
+                hours = new Date().getHours();
+                return hours;
+            }, 24, 1000, 150, 150, 150, 100, fill=false);*/
+			draw();
+        </script>
+    </body>
+</html>
